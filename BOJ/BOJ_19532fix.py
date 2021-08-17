@@ -9,9 +9,16 @@ a, b, c, d, e, f = map(int, input().split())
 # ax + by = c *e     | aex + bey = ce
 # dx + ey = f *b    -| bdx + bey = bf
 #                      (ae-bd)x + (be-be)y = (ce - bf) 이런식으로 식을 만들어서 x로 정리하고 y로 정리해서 계산함
-#이게 내가 할 수 있는 선에는 최선이었음
 
+<<<<<<< HEAD
+# a, b, c, d, e, f = map(int, input().split())
+# for x in range(-999, 1000, 1):
+#     for y in range(-999, 1000, 1):
+#         if a*x + b*y == c and d*x + e*y == f:
+#             print(x, y)
+=======
 for x in range(-999, 1000, 1):
     for y in range(-999, 1000, 1):
         if a*x+b*y==c and d*x+e*y==f:
             print(x, y)
+>>>>>>> 0ae1fa20580e4406e3b1be046bcc2700d3c2da0a
