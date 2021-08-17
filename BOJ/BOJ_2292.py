@@ -1,6 +1,7 @@
+# https://www.acmicpc.net/problem/2292
+
 T = int(input())
 
-for _ in range(T):
-    a, b = map(int, input().split())
-    i = a**b
-    print(str(i)[-1])
+room = 1
+end = 1
+while 
