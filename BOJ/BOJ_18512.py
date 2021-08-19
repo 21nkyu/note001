@@ -10,6 +10,20 @@
 # A : 한번에 10미터뜀, 시작점 30m, 5번 뜀
 # B : 한번에 12미터뜀, 시작점  8m, 6번 뜀
 
+X, Y, P_1, P_2 =  map(int, input().split())
+V = set([P_1 + X*i for i in range(1000)]) 
+W = set([P_2 + Y*j for j in range(1000)])
+# print(V)
+# print(W)
+Z = list(V & W)
+# print(min(Z))
+if len(Z) > 0:
+    print(min(Z))
+else:
+    print(-1)
+
+
+
 # X, Y, P_1, P_2 =  map(int, input().split())
 # V = set([P_1 + 10*i for i in range(1, X+1)]) 
 # W = set([P_2 + 12*j for j in range(1, Y+1)])
@@ -30,17 +44,7 @@
 
 
 
-X, Y, P_1, P_2 =  map(int, input().split())
-V = set([P_1 + X*i for i in range(1000)]) 
-W = set([P_2 + Y*j for j in range(1000)])
-# print(V)
-# print(W)
-Z = list(V & W)
-# print(min(Z))
-if len(Z) > 0:
-    print(min(Z))
-else:
-    print(-1)
+
 
 
 X, Y, P_1, P_2 =  map(int, input().split())
