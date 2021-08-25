@@ -13,6 +13,4 @@ while True:
         m = sys.stdin.rstrip()
         box.append((m.lower(), m))
         box.sort()
-    print(box[0][1])
-       
-    
+    print(box[0][1]) #튜플   
