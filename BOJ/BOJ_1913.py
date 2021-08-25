@@ -20,31 +20,31 @@ for i in range(1, N+1):
 
 
 
-start_n = 0
-end_n = len(array)
-div_n = N
-for k in range(start_n, len(array)+div_n, div_n):
-    print_out = array[start_n:start_n+div_n]
-    if print_out != []:
-        print(print_out)
-        start_n += div_n
-
-
-# idx_array = []
-# for idx, path in zip(range(1, 10), array):
-#     print(idx, path)
-#     idx_array.append((idx, path))
-
-
 # start_n = 0
-# end_n = len(idx_array)
+# end_n = len(array)
 # div_n = N
 # for k in range(start_n, len(array)+div_n, div_n):
-#     print_out = idx_array[start_n:start_n+div_n]
+#     print_out = array[start_n:start_n+div_n]
 #     if print_out != []:
 #         print(print_out)
 #         start_n += div_n
-# print(f'{idx_array[8]},{idx_array[7]}')
+
+
+idx_array = []
+for idx, path in zip(range(1, 10), array):
+    print(idx, path)
+    idx_array.append((idx, path))
+
+
+start_n = 0
+end_n = len(idx_array)
+div_n = N
+for k in range(start_n, len(array)+div_n, div_n):
+    print_out = idx_array[start_n:start_n+div_n]
+    if print_out != []:
+        print(print_out)
+        start_n += div_n
+print(f'{idx_array[8]},{idx_array[7]}')
 
 
 #     print(array)
