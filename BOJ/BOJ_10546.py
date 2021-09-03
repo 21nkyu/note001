@@ -21,7 +21,7 @@
 # #     if f_list[i] in r_list:
 # #         del f_list[i]
 # # print(r_list)
-
+#아무생각없이 이런식으로 리스트를 이용해서 삭제하는 방법으로 풀었는데
 #================================================
 
 
@@ -41,9 +41,10 @@
 # #     if i in r_list:
 # #         r_list.remove(i)
 # # print(r_list)
-
+#아무생각없이 이런식으로 리스트를 이용해서 삭제하는 방법으로 풀었는데 시간초과남 그래서 밑에 보니 해쉬테이블이라고함
 #================================================
 
+# 날로 먹으려고 조건에서 참가자가 중복허용이란 것을 보고도 set이용했는데 역시 안됨 
 # if len(set(r_list)) == len(set(f_list)):
 #     for i in f_list:
 #         if i in r_list:
@@ -90,19 +91,24 @@ n = int(input())
 run = [sys.stdin.readline().strip() for _ in range(n)]
 fin = [sys.stdin.readline().strip() for _ in range(n-1)]
 check = {}
-
-for i in range(n):
+                                #비어있는 dict에서 시작함
+for i in range(n):              #참가선수가 dict안에 없으면 key(선수) : value(값) value +1
     if run[i] not in check:
         check[run[i]] = 1
 
     else:
-        cnt = check[run[i]]
-        check[run[i]] = cnt + 1
+        cnt = check[run[i]]     #cnt는 현재값을 구하기 위한 값
+        check[run[i]] = cnt + 1 #현재값 + 1, 중복이라면 a : 2 가 돼있음
+# 전체 참가 {key(선수1) : value(선수1), key(선수2) : value(선수2).........} 
 
+# 완주 선수는 value -1 해줌
 for i in range(n-1):
     cnt = check[fin[i]]
     check[fin[i]] = cnt - 1
 
+# 이렇게 해서 value값이 정리된 테이블???에서 
+# 참가하면 +1 완주하면 -1 이므로 value에 +1이 있는 친구가 완주하지 못한 친구임
+# 그것을 확인하는 것이 마지막 코드임
 for key in check:
     if check[key] == 1:
         print(key)
