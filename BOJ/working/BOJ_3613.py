@@ -12,9 +12,9 @@ if '_' in h and h.islower() == True:
         if h[i] == '_':
             print(h[i+1].upper(), end='')
         else:
-            print(h[i], end='')
+            print(h[i-1], end='')
 
-elif '_' not in h and h.islower() ==False:
+elif '_' not in h and h.islower() == False:
     for i in range(len(h)):
         if h[i].isupper():
             print(h[i].lower(), end='')
