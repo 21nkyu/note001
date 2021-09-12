@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # https://www.acmicpc.net/problem/10448
-=======
-# https://www.acmicpc.net/problem/10448
-
 
 
 # #Tn = 1000보다 작다
@@ -26,4 +22,3 @@ t = int(input())
 for _ in range(t):                          
     tt = int(input())                       
     print(nums[tt])                         #여기인덱스와 같음
->>>>>>> 8f8a41943fdf9d2ce96f1d75c9adbf76fcb6e00b

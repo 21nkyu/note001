@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# https://www.acmicpc.net/problem/3613
-=======
 # https://www.acmicpc.net/problem/3613
 
 
@@ -43,4 +40,3 @@ else:
 #         print(h[i+1].upper(), end='')
 #     else:
 #         print(h[i], end='')
->>>>>>> 8f8a41943fdf9d2ce96f1d75c9adbf76fcb6e00b
