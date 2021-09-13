@@ -13,23 +13,23 @@ f = 0  #피로도
 w = 0  #처리하는 일
 h = 0  #시간==24시간
 while True:
-    if h==24:
-        print(w)
+    if h==24:                               #하루 = 24시간
+        print(w)                            #일 완료
         break
     
-    elif f >= 0 and f+a <= m and h < 24:
-        f += a
+    elif f >= 0 and f+a <= m and h < 24:    #피로도, 다음에 누적 피로도, 시간 
+        f += a                              #세가진 조건을 만족하면 피로도+ 처리하는일+ 시간+
         w += b
         h += 1
         print(f, w, h)   
     
-    elif f+a > m:
-        f -= c
-        # w = 0
-        h += 1
+    elif f+a > m:                           #다음 피로도가 피로도상한m 보다 크면              
+        f -= c                              #이전 피로도 -휴식피로도
+        # w += 0                            #일은 += 0
+        h += 1                              #시간증가
         print(f, h)
     
-    elif a > m:
+    elif a > m:                             #피로도가 피로도 상산을 초과하면 0
         print(0)
         break
     
