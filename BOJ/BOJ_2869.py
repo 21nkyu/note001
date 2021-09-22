@@ -4,13 +4,27 @@
 
 a,b,v = map(int, input().split())
 
-if a-b == 1:
-    print(v-a+1)
-elif (v%(a-b)) == 0:
-    print(v//(a-b))
-else:
-    print(v//(a-b) +1)
 
+
+# if a-b == 1:
+#     print(v-a+1)
+# elif (v-a)%(a-b) + a >= v:
+#     print(((v-a)%(a-b)) +1)
+# elif (v-a)%(a-b) + a < v:
+#     print(((v-a)//(a-b)) +2)
+# elif (v-a)%(a-b)==0:
+#     print(((v-a)//(a-b)) +1)
+
+#=====================================
+
+# a,b,v = map(int, input().split())
+
+# if a-b == 1:
+#     print(v-a+1)
+# elif (v%(a-b)) == 0:
+#     print(v//(a-b))
+# else: 
+#     print(v//(a-b)+1)
 
 
 
