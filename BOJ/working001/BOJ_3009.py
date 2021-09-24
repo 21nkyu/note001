@@ -13,7 +13,8 @@ for i in y:
         z.append(i)
 
 print(*z)
-
+# for i in z:
+#     print(i, end=' ')
 
 
 #=====================================
